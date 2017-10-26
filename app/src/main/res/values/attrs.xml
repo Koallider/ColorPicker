@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="SimpleColorPicker">
+        <attr name="layoutType" format="enum">
+            <enum name="linear_horizontal" value="0"/>
+            <enum name="linear_vertical" value="1"/>
+            <enum name="grid" value="2"/>
+        </attr>
+        <attr name="columnCount" format="integer"/>
+        <attr name="colors" format="reference"/>
+    </declare-styleable>
+</resources>
