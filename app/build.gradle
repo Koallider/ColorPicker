@@ -3,6 +3,17 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.novoda.bintray-release' // must be applied after your artifact generating plugin (eg. java / com.android.library)
+
+publish {
+    userOrg = 'romanrrr'
+    groupId = 'ru.ryakovlev.android'
+    artifactId = 'color-picker'
+    publishVersion = '0.0.1'
+    desc = 'ColopPicker widget for Android'
+    website = 'https://github.com/novoda/bintray-release'
+}
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
@@ -10,7 +21,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
